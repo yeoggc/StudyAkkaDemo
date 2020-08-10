@@ -1,4 +1,4 @@
-package com.ggc.study_scala.io;
+package com.ggc.study_scala.utilities.io;
 
 import akka.actor.ActorRef;
 import akka.actor.Props;

@@ -1,15 +1,12 @@
-package com.ggc.study_scala.io;
+package com.ggc.study_scala.utilities.io;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.io.Tcp;
 import akka.io.TcpMessage;
-import akka.util.ByteString;
 
 import java.net.InetSocketAddress;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 public class TcpServerDemo {
     public static void main(String[] args) {

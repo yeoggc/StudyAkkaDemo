@@ -1,4 +1,4 @@
-package com.ggc.study_scala.io;
+package com.ggc.study_scala.utilities.io;
 
 import akka.actor.ActorRef;
 import akka.actor.Props;
@@ -12,7 +12,7 @@ public class TcpClientActor extends UntypedActor {
     public void onReceive(Object msg) throws Exception, Exception {
         if (msg instanceof Tcp.Bound) {
             Tcp.Bound bound = (Tcp.Bound) msg;
-            System.out.println("self : " + getSelf() + " , sender : "+getSender()  +" , bound : " + bound);
+            System.out.println("self : " + getSelf() + " , sender : " + getSender() + " , bound : " + bound);
         } else if (msg instanceof Tcp.Connected) {
             Tcp.Connected conn = (Tcp.Connected) msg;
 
@@ -22,7 +22,7 @@ public class TcpClientActor extends UntypedActor {
             connActor.tell(TcpMessage.register(clientHandler), getSelf());
             connActor.tell(TcpMessage.write(ByteString.fromString("HelloAkka")), getSelf());
 
-            System.out.println("self : " + getSelf() + " , sender : "+getSender()  +" , conn : " + conn);
+            System.out.println("self : " + getSelf() + " , sender : " + getSender() + " , conn : " + conn);
 
         }
         /*
