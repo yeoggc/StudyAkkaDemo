@@ -30,7 +30,7 @@ hs_err_pid*
 ### Example user template
 
 # IntelliJ project files
-../../../Spark/Spark_Study_Atguigu/atguigu-spark-realtime/.idea
+
 *.iml
 out
 gen
