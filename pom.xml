@@ -24,10 +24,25 @@
                 <artifactId>akka-remote_2.11</artifactId>
                 <version>2.4.7</version>
             </dependency>
+            <!-- Akka Streams-->
+            <dependency>
+                <groupId>com.typesafe.akka</groupId>
+                <artifactId>akka-stream-testkit_2.11</artifactId>
+                <version>2.4.7</version>
+            </dependency>
+
+
+            <!-- miscellaneous -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.18.12</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>compile</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -42,11 +57,23 @@
             <artifactId>akka-remote_2.11</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-stream-testkit_2.11</artifactId>
+        </dependency>
+
+
+        <!-- miscellaneous -->
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-    </dependencies>
 
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+
+    </dependencies>
 
 
 </project>
